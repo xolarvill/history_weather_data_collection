@@ -1,0 +1,20 @@
+{"openweather": 
+        {"apikey": "",
+        "max_request_per_month": "1000000",
+        "max_request_per_miniute": "60",
+        "docs": "https://openweathermap.org/history"
+        },
+    "visualcrossing":
+        {"apikey": "",
+        "max_request_per_day": "1000",
+        "docs": "https://link.zhihu.com/?target=https%3A//www.visualcrossing.com/weather-api"
+        },
+    "qweather":
+        {
+        "开发者ID":"",
+        "API Host":"",
+        "apikey":"",
+        "max_request_per_day": "1000",
+        "docs":"https://dev.qweather.com/docs/api/"
+        }
+}
