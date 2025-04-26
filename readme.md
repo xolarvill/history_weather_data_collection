@@ -1,5 +1,7 @@
 # weather data collection and aggregation
 
+this is a sub project of the my [master thesis project](github.com/xolarvill/KWL).
+
 ## project description
 
 - collect history weather data from api services, store it in a csv file, and aggregate it.
