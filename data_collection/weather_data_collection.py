@@ -208,7 +208,7 @@ def get_weather_data_with_fallback(
             if api_service in ["openweather", "qweather"]:
                 result = api_func(province=province, city=city, year=year, api_key=api_keys[api_service], lat=lat, lon=lon)
             else:
-                result = api_func(province=province, city=year, api_key=api_keys[api_service])
+                result = api_func(province=province, city=city, year=year, api_key=api_keys[api_service])
 
             if result and isinstance(result, list):
                 logger.info(f"成功使用 {api_service} 获取 {province}-{city} {year}年 的数据")

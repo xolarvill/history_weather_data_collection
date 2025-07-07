@@ -17,7 +17,7 @@ from typing import Dict, Any, List, Tuple, Optional, Union, Set
 from functools import lru_cache
 
 # 导入断点管理器
-from checkpoint_manager import CheckpointManager
+from .checkpoint_manager import CheckpointManager
 
 # 配置日志
 logging.basicConfig(
