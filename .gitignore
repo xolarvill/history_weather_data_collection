@@ -1,2 +1,5 @@
 storage/
 config.json
+**/__pyache__/
+*.log
+*.pyc

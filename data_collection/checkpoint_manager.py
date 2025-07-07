@@ -412,6 +412,24 @@ class CheckpointManager:
             
             return False
     
+    def is_failed(self, city: str, year: int, province: Optional[str] = None) -> bool:
+        """
+        检查城市-年份对是否失败
+
+        参数:
+            city (str): 城市名称
+            year (int): 年份
+            province (Optional[str]): 省份名称
+
+        返回:
+            bool: 是否失败
+        """
+        with self.lock:
+            checkpoint = self.load_checkpoint(province)
+            if 'failed' in checkpoint and city in checkpoint['failed']:
+                return str(year) in checkpoint['failed'][city]
+            return False
+
     def get_completed_tasks(self, province: Optional[str] = None) -> Dict[str, Set[int]]:
         """
         获取已完成的任务列表
