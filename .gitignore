@@ -3,3 +3,4 @@ config.json
 **/__pyache__/
 *.log
 *.pyc
+gemini.md
